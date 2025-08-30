@@ -5,92 +5,60 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-  margin-bottom: 0.5em;
-}
-
-a {
-  color: #007acc; /* default link color */
-  text-decoration: none;
-  transition: color 0.2s ease, text-decoration 0.2s ease;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #005f99; /* darker shade on hover */
-}
-
-/* ------------------------
-   Layout Containers
-------------------------- */
-header, main, footer {
-  max-width: 900px;
-  margin: auto;
   padding: 20px;
+  background-color: #fff;
+  color: #202124; /* Google-like text color */
 }
 
-section {
+header {
   margin-bottom: 40px;
 }
 
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0 0 6px 0;
+}
+
 /* ------------------------
-   Projects Section
+   Project Section
 ------------------------- */
-#projects {
-  display: grid;
-  grid-template-columns: 1fr; /* single column for mobile */
-  gap: 24px;
-}
-
-@media (min-width: 768px) {
-  #projects {
-    grid-template-columns: 1fr 1fr; /* two columns on tablets/desktops */
-  }
-}
-
 .project {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 24px;
 }
 
-.project:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* Title links inside projects */
+/* Title links like Google results */
 .project h3 a {
-  color: inherit;              /* inherit heading color */
-  text-decoration: none;       /* no underline by default */
+  color: #1a0dab;          /* Google blue */
+  text-decoration: none;   /* no underline by default */
 }
 
 .project h3 a:hover {
-  text-decoration: underline;  /* underline on hover */
-  color: #007acc;              /* optional color shift */
+  text-decoration: underline; /* underline on hover */
 }
 
+/* Description snippet text */
 .project p {
-  margin-top: 8px;
+  margin: 0;
+  color: #4d5156;  /* muted gray like Google snippets */
   font-size: 0.95rem;
-  color: #555;
 }
 
 /* ------------------------
    Footer
 ------------------------- */
 footer {
+  margin-top: 40px;
   text-align: center;
   font-size: 0.9rem;
   color: #666;
-  margin-top: 40px;
 }
