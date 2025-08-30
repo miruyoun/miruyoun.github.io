@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RelaxedQMIX Project</title>
+  <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS -->
+</head>
+<body>
+  <header>
+    <h1>RelaxedQMIX: Relaxing Monotonicity Constraints in Multi-Agent Reinforcement Learning</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        As part of my graduate research, I extended the PyMARL framework to implement 
+        <strong>RelaxedQMIX</strong>, a modification of the QMIX algorithm for cooperative multi-agent reinforcement 
+        learning (MARL). This project aimed to relax QMIX’s monotonicity constraint to improve agent coordination.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Did</h2>
+      <ul>
+        <li>Designed and implemented the <strong>RelaxedQMIX architecture</strong> with a learned correction term.</li>
+        <li>Integrated the correction network into the PyMARL codebase with stabilization mechanisms.</li>
+        <li>Configured and ran experiments on BU’s SCC cluster using NVIDIA V100 GPUs and SLURM scripts.</li>
+        <li>Evaluated RelaxedQMIX against QMIX across four SMAC maps (8m, 2s3z, MMM2, corridor).</li>
+        <li>Analyzed win rates, training loss, and average rewards.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <ul>
+        <li>Matched QMIX performance on simple maps (8m, 2s3z) with >80% win rate.</li>
+        <li>Achieved ~70% win rate on MMM2 vs QMIX’s <10%.</li>
+        <li>Showed RelaxedQMIX enabled agents to explore tactical retreats and sacrifice strategies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <p>Python · PyTorch · PyMARL · StarCraft II (SMAC) · SLURM · HPC (BU SCC)</p>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <p>
+        <a href="https://github.com/miruyoun/relaxed_qmix_pymarl" target="_blank">
+          GitHub Repository
+        </a>
+      </p>
+      <p><a href="../index.html">← Back to Portfolio</a></p>
+    </section>
+  </main>
+</body>
+</html>
