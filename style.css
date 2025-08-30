@@ -81,6 +81,22 @@ h2 {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Clickable Blox */
+.project-link {
+  display: block;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease-in-out;
+}
+    
+.project-link:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
 /* Skills Section */
 #skills ul {
   list-style: none;
