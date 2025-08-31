@@ -167,5 +167,5 @@ details[open] summary {
 nav a.active {
   font-weight: bold;
   color: #0b0080 !important; /* darker blue */
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
