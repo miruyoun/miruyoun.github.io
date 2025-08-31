@@ -24,12 +24,19 @@ section {
 /* ------------------------
    Header
 ------------------------- */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .header-flex {
   display: flex;
-  flex-direction: column;   /* stack items vertically */
-  align-items: center;      /* center everything horizontally */
-  text-align: center;       /* center text */
-  padding: 20px;
+  flex-direction: column;   /* stack vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically inside */
+  text-align: center;       /* center text inside */
+  padding: 40px 20px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #ddd;
 }
