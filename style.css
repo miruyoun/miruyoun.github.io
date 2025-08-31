@@ -26,19 +26,21 @@ section {
 ------------------------- */
 .header-flex {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;      /* center everything horizontally */
+  text-align: center;       /* center text */
   padding: 20px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #ddd;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%; /* circular image */
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;  /* circle image */
   object-fit: cover;
   border: 2px solid #ccc;
+  margin-bottom: 16px; /* spacing between image and text */
 }
 
 .header-flex h1 {
@@ -47,21 +49,22 @@ section {
 }
 
 .header-flex p {
-  margin: 4px 0 12px 0;
+  margin: 6px 0 12px 0;
   font-size: 1rem;
   color: #555;
 }
 
-/* Nav links */
+/* Centered nav links */
 nav a {
-  margin-right: 15px;
-  color: #1a0dab;        /* Google link blue */
-  text-decoration: none; /* no underline by default */
+  margin: 0 10px;
+  color: #1a0dab;
+  text-decoration: none;
 }
 
 nav a:hover {
-  text-decoration: underline; /* underline only on hover */
+  text-decoration: underline;
 }
+
 
 /* ------------------------
    Projects Section
