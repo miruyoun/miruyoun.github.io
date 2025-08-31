@@ -7,56 +7,83 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Mi-Ru Youn</h1>
-    <p>Data Science Master's Student | Machine Learning · Reinforcement Learning · Graph Neural Networks</p>
-  </header>
+    <header class="header-flex">
+    <img src="assets/profile.png" alt="Mi-Ru Youn" class="profile-pic">
+    <div>
+        <h1>Mi-Ru Youn</h1>
+        <p>Data Science Master's Student at Boston University</p>
+        <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    </header>
 
-  <main>
-    <section id="projects">
-      <h2>Projects</h2>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Master’s student in Data Science at Boston University, with a background in Environmental Science 
+        from the University of North Carolina at Chapel Hill. My academic and project experience spans machine learning, 
+        reinforcement learning, and graph neural networks, as well as big data systems and cloud technologies.
+    </p>
+    <p>
+        I like applying data science to all sorts of real-world problems, but I have a genuine passion for using 
+        it in environmental domains such as ecology, sustainability, and climate. I enjoy exploring how computational 
+        methods can generate insights that drive meaningful action in addressing environmental challenges.
+    </p>
+    <p>
+        Beyond coursework, I’ve tutored students in coding, statistics, and machine learning, helping them strengthen 
+        their technical foundation. I aim to leverage my technical expertise and problem-solving skills to contribute 
+        to impactful, data-driven decision-making in both research and industry settings.
+    </p>
+  </section>
 
-      <div class="project">
+<section id="projects">
+  <h2>Projects</h2>
+
+    <div class="project">
         <h3>
-          <a href="projects/relaxedqmix.html">RelaxedQMIX: Relaxing Monotonicity Constraints in MARL</a>
+        <a href="projects/relaxedqmix.html">RelaxedQMIX: Relaxing Monotonicity Constraints in MARL</a>
         </h3>
         <p>
-          Designed and implemented RelaxedQMIX in the PyMARL framework to relax QMIX’s monotonicity
-          constraints, improving multi-agent coordination in StarCraft II environments.
+        Implemented a novel extension of QMIX in the PyMARL framework, improving 
+        multi-agent coordination in StarCraft II environments.
         </p>
-      </div>
+    </div>
 
-      <div class="project">
+    <div class="project">
         <h3>
-          <a href="projects/starsampler.html">StarSampler – Dark Matter Distribution with GNNs</a>
+        <a href="projects/starsampler.html">StarSampler – Dark Matter Distribution with GNNs</a>
         </h3>
         <p>
-          Modeled galaxy distributions as graphs and trained GCNs to predict dark matter halo densities,
-          improving accuracy and enabling interpretable embeddings for astrophysics research.
+        Modeled astrophysical structures as graphs and trained GCNs to predict 
+        dark-matter density distributions.
         </p>
-      </div>
+    </div>
 
-      <div class="project">
+    <div class="project">
         <h3>
-          <a href="projects/mbta.html">MBTA Bus Equity – Data Science Practicum</a>
+        <a href="projects/mbta.html">MBTA Bus Equity – Data Science Practicum</a>
         </h3>
         <p>
-          Analyzed MBTA bus service reliability using Python, SQL, and Power BI to identify inequities in
-          transit accessibility across Boston neighborhoods.
+        Analyzed Boston’s MBTA bus routes for transit equity using Python, SQL, and Power BI.
         </p>
-      </div>
-
-      <div class="project">
-        <h3>
-          <a href="projects/personal.html">Personal Projects</a>
-        </h3>
-        <p>
-          Includes my GitHub Pages portfolio, reinforcement learning experiments in OpenAI Gym, and
-          graph attention network extensions for StarCraft II multi-agent tasks.
-        </p>
-      </div>
+    </div>
     </section>
-  </main>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:miruyoun@bu.edu">miruyoun@bu.edu</a> | 
+      💼 <a href="https://linkedin.com/in/miruayoun" target="_blank">LinkedIn</a> | 
+      🐙 <a href="https://github.com/miruyoun" target="_blank">GitHub</a>
+    </p>
+    <p>
+    📄 <a href="assets/Mi-Ru_Youn_Resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
+    </p>
+  </section>
 
   <footer>
     <p>© 2025 Mi-Ru Youn</p>

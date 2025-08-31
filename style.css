@@ -5,48 +5,80 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   background-color: #fff;
-  color: #202124; /* Google-like text color */
+  color: #202124; /* clean, neutral text color */
 }
 
-header {
-  margin-bottom: 40px;
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
 }
 
-h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-  margin: 0 0 6px 0;
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 /* ------------------------
-   Project Section
+   Header
+------------------------- */
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* circular image */
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.header-flex h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-flex p {
+  margin: 4px 0 12px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Nav links */
+nav a {
+  margin-right: 15px;
+  color: #1a0dab;        /* Google link blue */
+  text-decoration: none; /* no underline by default */
+}
+
+nav a:hover {
+  text-decoration: underline; /* underline only on hover */
+}
+
+/* ------------------------
+   Projects Section
 ------------------------- */
 .project {
   margin-bottom: 24px;
 }
 
-/* Title links like Google results */
 .project h3 a {
-  color: #1a0dab;          /* Google blue */
-  text-decoration: none;   /* no underline by default */
+  color: #1a0dab;        /* Google link blue */
+  text-decoration: none; /* no underline by default */
 }
 
 .project h3 a:hover {
-  text-decoration: underline; /* underline on hover */
+  text-decoration: underline; /* underline only on hover */
 }
 
-/* Description snippet text */
 .project p {
   margin: 0;
   color: #4d5156;  /* muted gray like Google snippets */
@@ -54,11 +86,39 @@ h3 {
 }
 
 /* ------------------------
+   Contact Section
+------------------------- */
+#contact a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.resume-btn {
+  background-color: #1a0dab;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resume-btn:hover {
+  background-color: #0d0080;
+  text-decoration: none;
+}
+
+/* ------------------------
    Footer
 ------------------------- */
 footer {
-  margin-top: 40px;
   text-align: center;
   font-size: 0.9rem;
   color: #666;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
 }
