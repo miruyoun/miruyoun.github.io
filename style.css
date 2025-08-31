@@ -133,7 +133,9 @@ footer {
   margin-top: 40px;
 }
 
-/* About page dropdowns */
+/* ------------------------
+   About Page Dropdowns
+------------------------- */
 details {
   margin: 16px 0;
   padding: 12px 16px;
@@ -157,4 +159,13 @@ summary {
 
 details[open] summary {
   margin-bottom: 10px;
+}
+
+/* ------------------------
+   Active Nav Link
+------------------------- */
+nav a.active {
+  font-weight: bold;
+  color: #0b0080; /* darker blue */
+  text-decoration: underline;
 }
