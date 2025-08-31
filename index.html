@@ -71,7 +71,24 @@
         Analyzed Boston’s MBTA bus routes for transit equity using Python, SQL, and Power BI.
         </p>
     </div>
-    </section>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <h3>Programming</h3>
+  <p>Python, R, Java, JavaScript, HTML, CSS, SAS</p>
+
+  <h3>Data & Machine Learning</h3>
+  <p>PyTorch, TensorFlow, Scikit-Learn, NumPy, Pandas, Matplotlib, Seaborn</p>
+
+  <h3>Databases</h3>
+  <p>SQL (PostgreSQL, MySQL, SQLite), NoSQL (MongoDB, Cassandra)</p>
+
+  <h3>Other Tools & Platforms</h3>
+  <p>Git, Hadoop, Spark, AWS, Microsoft Azure, Jupyter Notebooks, Microsoft Office (Word, Excel, etc.), Tableau, Power BI</p>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
@@ -88,5 +105,16 @@
   <footer>
     <p>© 2025 Mi-Ru Youn</p>
   </footer>
+
+  <script>
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, null, ' '); // removes #about from URL
+    });
+  });
+</script>
 </body>
 </html>
