@@ -73,10 +73,6 @@
 
     detail.addEventListener("toggle", function () {
       if (this.open) {
-        // Accordion mode: close others
-        document.querySelectorAll("details").forEach((other) => {
-          if (other !== this) other.removeAttribute("open");
-        });
 
         // Expanding
         content.style.maxHeight = content.scrollHeight + "px";
