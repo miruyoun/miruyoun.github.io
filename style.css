@@ -142,6 +142,7 @@ details {
   background: #f9f9f9;
 }
 
+/* Question row */
 summary {
   padding: 12px 16px;
   font-weight: 600;
@@ -152,22 +153,10 @@ summary {
   list-style: none; /* hide browser's default marker */
   display: flex;
   align-items: center;
+  justify-content: space-between; /* text on left, arrow on right */
 }
 
-/* Custom arrow on the left */
-summary::before {
-  content: "▶";
-  font-size: 0.9rem;
-  margin-right: 8px;
-  flex-shrink: 0;      /* keep arrow fixed size */
-  transition: transform 0.3s ease;
-}
-
-details[open] summary::before {
-  transform: rotate(90deg); /* arrow rotates down when open */
-}
-
-/* Keep emoji aligned with text */
+/* Keep emoji aligned */
 summary span.emoji {
   margin-right: 6px;
   font-size: 1rem;
@@ -176,12 +165,24 @@ summary span.emoji {
   align-items: center;
 }
 
+/* Custom arrow on the right */
+summary::after {
+  content: "▶";
+  font-size: 0.9rem;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg); /* arrow rotates down when open */
+}
+
 /* Answer content */
 details > summary + * {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
   padding: 0 16px;
 }
 
