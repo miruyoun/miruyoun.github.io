@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  color: #202124; /* clean, neutral text color */
+  color: #202124;
 }
 
 h1, h2, h3 {
@@ -32,10 +32,10 @@ header {
 
 .header-flex {
   display: flex;
-  flex-direction: column;   /* stack vertically */
-  align-items: center;      /* center horizontally */
-  justify-content: center;  /* center vertically inside */
-  text-align: center;       /* center text inside */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 40px 20px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #ddd;
@@ -44,10 +44,10 @@ header {
 .profile-pic {
   width: 140px;
   height: 140px;
-  border-radius: 50%;  /* circle image */
+  border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ccc;
-  margin-bottom: 16px; /* spacing between image and text */
+  margin-bottom: 16px;
 }
 
 .header-flex h1 {
@@ -61,7 +61,9 @@ header {
   color: #555;
 }
 
-/* Centered nav links */
+/* ------------------------
+   Nav Links
+------------------------- */
 nav a {
   margin: 0 10px;
   color: #1a0dab;
@@ -80,17 +82,17 @@ nav a:hover {
 }
 
 .project h3 a {
-  color: #1a0dab;        /* Google link blue */
-  text-decoration: none; /* no underline by default */
+  color: #1a0dab;
+  text-decoration: none;
 }
 
 .project h3 a:hover {
-  text-decoration: underline; /* underline only on hover */
+  text-decoration: underline;
 }
 
 .project p {
   margin: 0;
-  color: #4d5156;  /* muted gray like Google snippets */
+  color: #4d5156;
   font-size: 0.95rem;
 }
 
@@ -140,6 +142,7 @@ details {
   border: 1px solid #ddd;
   border-radius: 6px;
   background: #f9f9f9;
+  overflow: hidden;
 }
 
 /* Question row */
@@ -150,43 +153,35 @@ summary {
   color: #1a0dab;
   cursor: pointer;
   user-select: none;
-  list-style: none; /* hide browser's default marker */
+  list-style: none;
   display: flex;
   align-items: center;
 }
 
-/* Custom arrow on the right */
+/* Arrow on the right */
 summary::after {
   content: "▶";
   font-size: 0.9rem;
-  margin-left: auto;   /* pushes arrow to far right */
+  margin-left: auto;
   transition: transform 0.3s ease;
 }
 
 details[open] summary::after {
-  transform: rotate(90deg); /* arrow rotates down when open */
+  transform: rotate(90deg);
 }
 
-/* Smooth dropdown content */
-details > *:not(summary) {
+/* Dropdown content */
+details > div {
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
+  overflow: hidden;
   padding: 0 16px;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.3s ease;
 }
 
-details[open] > *:not(summary) {
-  max-height: 500px; /* adjust if content is longer */
+/* Smooth expand */
+details[open] > div {
+  max-height: 1000px; /* large enough for longest content */
   opacity: 1;
   padding: 12px 16px;
-}
-
-/* ------------------------
-   Active Nav Link
-------------------------- */
-nav a.active {
-  font-weight: bold;
-  color: #0b0080 !important; /* darker blue */
-  text-decoration: underline !important;
 }
