@@ -19,7 +19,6 @@ summary {
   list-style: none; /* hide browser's default arrow */
   display: flex;
   align-items: center;
-  justify-content: space-between; /* text on left, arrow on right */
 }
 
 /* Keep emoji + text on the left, arrow on the right */
