@@ -136,40 +136,46 @@ footer {
 /* ------------------------
    About Page Dropdowns
 ------------------------- */
-/* ------------------------
-   About Page Dropdowns
-------------------------- */
+/* Container styling */
 details {
   margin: 16px 0;
-  padding: 12px 16px;
   border: 1px solid #ddd;
   border-radius: 6px;
   background: #f9f9f9;
+  padding: 0; /* remove padding so summary + content handle it */
+}
+
+summary {
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1a0dab;
   cursor: pointer;
-  overflow: hidden;
-  max-height: 2.5em;          /* only show the summary initially */
-  transition: max-height 0.4s ease, background 0.2s ease;
+  user-select: none;
+  outline: none;
 }
 
 details:hover {
   background: #f1f1f1;
 }
 
-summary {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #1a0dab;
-  outline: none;
-  cursor: pointer;
-  user-select: none;
-}
-
-details[open] {
-  max-height: 500px;          /* expand smoothly (adjust if content is bigger) */
-}
-
 details[open] summary {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+}
+
+/* Smooth dropdown for content */
+details > *:not(summary) {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  padding: 0 16px; /* horizontal padding stays */
+}
+
+details[open] > *:not(summary) {
+  max-height: 500px; /* adjust if content is larger */
+  opacity: 1;
+  padding: 12px 16px;
 }
 
 
