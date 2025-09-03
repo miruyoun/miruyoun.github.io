@@ -22,6 +22,11 @@ summary {
   justify-content: space-between; /* text on left, arrow on right */
 }
 
+/* Keep emoji + text on the left, arrow on the right */
+summary span.text {
+  flex: 1; /* pushes arrow to far right */
+}
+
 /* Custom arrow on the right */
 summary::after {
   content: "▶";
