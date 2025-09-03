@@ -72,7 +72,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-
 /* ------------------------
    Projects Section
 ------------------------- */
@@ -150,36 +149,39 @@ summary {
   color: #1a0dab;
   cursor: pointer;
   user-select: none;
-  list-style: none; /* hides browser’s default arrow */
+  list-style: none; /* hide browser's default marker */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Smooth drop animation */
-details .content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  padding: 0 16px;
-}
-
-details[open] .content {
-  max-height: 500px;
-  opacity: 1;
-  padding: 12px 16px;
-}
-
-/* Custom arrow indicator */
+/* Custom arrow */
 summary::after {
-  content: "▶";               /* right-pointing arrow */
+  content: "▶";
   font-size: 0.9rem;
   margin-left: 8px;
   transition: transform 0.3s ease;
 }
 
 details[open] summary::after {
-  transform: rotate(90deg);   /* turns downward when open */
+  transform: rotate(90deg); /* rotate arrow when open */
 }
 
+/* Answer content (everything after summary) */
+details > summary + * {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+  padding: 0 16px;
+}
+
+/* Smooth expand when open */
+details[open] > summary + * {
+  max-height: 500px; /* adjust for longer content */
+  opacity: 1;
+  padding: 12px 16px;
+}
 
 /* ------------------------
    Active Nav Link
