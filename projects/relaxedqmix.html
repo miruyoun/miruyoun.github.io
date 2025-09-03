@@ -3,58 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RelaxedQMIX Project</title>
-  <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS -->
+  <title>RelaxedQMIX | Mi-Ru Youn</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <header>
-    <h1>RelaxedQMIX: Relaxing Monotonicity Constraints in Multi-Agent Reinforcement Learning</h1>
+  <!-- Site Header -->
+  <header class="header-flex">
+    <img src="../assets/profile.png" alt="Portrait of Mi-Ru Youn" class="profile-pic">
+    <div>
+      <h1>Mi-Ru Youn</h1>
+      <p>Data Science Master's Student at Boston University</p>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../index.html#projects" class="active">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <!-- Overview -->
     <section>
       <h2>Overview</h2>
       <p>
-        As part of my graduate research, I extended the PyMARL framework to implement 
-        <strong>RelaxedQMIX</strong>, a modification of the QMIX algorithm for cooperative multi-agent reinforcement 
-        learning (MARL). This project aimed to relax QMIX’s monotonicity constraint to improve agent coordination.
+        <b>RelaxedQMIX</b> is a modification of the QMIX algorithm for 
+        <b>multi-agent reinforcement learning (MARL)</b> in <b>StarCraft II</b>. 
+        By introducing a learned correction term to QMIX’s mixing network, 
+        the project relaxes the strict monotonicity constraint, enabling 
+        agents to explore strategies such as tactical retreats and 
+        sacrificial plays that standard QMIX cannot capture.
       </p>
     </section>
 
+    <!-- Problem -->
     <section>
-      <h2>What I Did</h2>
+      <h2>Problem</h2>
+      <p>
+        While QMIX provides strong performance in cooperative MARL tasks, 
+        its strict monotonicity constraint severely limits coordination. 
+        Agents are forced to only take actions that increase their own Q-values, 
+        discouraging short-term sacrifices that could benefit the team’s 
+        long-term success. As a result, QMIX struggles in heterogeneous 
+        and asymmetric environments.
+      </p>
+    </section>
+
+    <!-- Solution -->
+    <section>
+      <h2>Solution</h2>
       <ul>
-        <li>Designed and implemented the <strong>RelaxedQMIX architecture</strong> with a learned correction term.</li>
-        <li>Integrated the correction network into the PyMARL codebase with stabilization mechanisms.</li>
-        <li>Configured and ran experiments on BU’s SCC cluster using NVIDIA V100 GPUs and SLURM scripts.</li>
-        <li>Evaluated RelaxedQMIX against QMIX across four SMAC maps (8m, 2s3z, MMM2, corridor).</li>
-        <li>Analyzed win rates, training loss, and average rewards.</li>
+        <li>Implemented a <b>correction network</b> with state re-injection and L2 regularization.</li>
+        <li>Interpolated between strict monotonicity (ε = 0) and flexible coordination (ε > 0).</li>
+        <li>Integrated RelaxedQMIX into the <b>PyMARL</b> framework and evaluated on SMAC maps.</li>
       </ul>
     </section>
 
+    <!-- Implementation -->
+    <section>
+      <h2>Implementation</h2>
+      <p>
+        Experiments were conducted on BU’s <b>Shared Computing Cluster</b> 
+        using <b>NVIDIA V100 GPUs</b> and SLURM scripts.
+      </p>
+      <p>
+        <i>Configuration:</i> ε-greedy exploration (1.0 → 0.05), replay buffer = 5000, 
+        target update every 200 episodes, RMSProp optimizer (lr = 0.0005).
+      </p>
+    </section>
+
+    <!-- Results -->
     <section>
       <h2>Results</h2>
       <ul>
-        <li>Matched QMIX performance on simple maps (8m, 2s3z) with >80% win rate.</li>
-        <li>Achieved ~70% win rate on MMM2 vs QMIX’s <10%.</li>
-        <li>Showed RelaxedQMIX enabled agents to explore tactical retreats and sacrifice strategies.</li>
+        <li><b>8m & 2s3z:</b> matched QMIX performance (~90% win rate).</li>
+        <li><b>MMM2:</b> RelaxedQMIX achieved ~<b>70% win rate</b> vs QMIX’s <b>10%</b>.</li>
+        <li><b>Corridor:</b> remained unsolved (0%), showing the limits of monotonic relaxations.</li>
       </ul>
+      <!-- Optional: Add plots later -->
+      <!-- <img src="../assets/relaxedqmix_winrate.png" alt="Win rate comparison" class="project-img"> -->
     </section>
 
+    <!-- Impact -->
+    <section>
+      <h2>Impact</h2>
+      <p>
+        RelaxedQMIX demonstrates that <b>small architectural changes can 
+        significantly improve cooperative agent learning</b>. 
+        It preserved QMIX’s strengths on simple maps while 
+        achieving substantial improvements in more complex 
+        heterogeneous scenarios.
+      </p>
+    </section>
+
+    <!-- Tech Stack -->
     <section>
       <h2>Tech Stack</h2>
-      <p>Python · PyTorch · PyMARL · StarCraft II (SMAC) · SLURM · HPC (BU SCC)</p>
+      <p>
+        Python · PyTorch · PyMARL · StarCraft II (SMAC) · SLURM · HPC (BU SCC)
+      </p>
     </section>
 
+    <!-- Links -->
     <section>
       <h2>Links</h2>
       <p>
-        <a href="https://github.com/miruyoun/relaxed_qmix_pymarl" target="_blank">
-          GitHub Repository
+        <a href="https://github.com/miruyoun/PyMARL_RL_Project" target="_blank" class="resume-btn">
+          🔗 View GitHub Repository
         </a>
       </p>
+      <p>
+        <a href="../assets/RelaxedQMIX_Paper.pdf" target="_blank" class="resume-btn">
+          📄 Read Full Paper (PDF)
+        </a>
+      </p>
+
       <p><a href="../index.html">← Back to Portfolio</a></p>
     </section>
   </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <p>© 2025 Mi-Ru Youn</p>
+  </footer>
 </body>
 </html>
