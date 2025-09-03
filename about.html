@@ -31,7 +31,7 @@
 
       <details>
         <summary>👤 Who am I?</summary>
-        <div>
+        <div class="content">
           <p>
             I enjoy exploring all areas of data science, including machine learning, deep learning, and statistical analysis, 
             as well as big data systems and cloud technologies. While I like applying data science across diverse fields, my 
@@ -42,7 +42,7 @@
 
       <details>
         <summary>📘 What do I like to study?</summary>
-        <div>
+        <div class="content">
           <p>
             I enjoy exploring all areas of data science, including machine learning, deep learning, and statistical analysis, as 
             well as big data systems and cloud technologies. I am especially passionate about applying these methods to address 
@@ -53,7 +53,7 @@
 
       <details>
         <summary>🎨 What are my hobbies?</summary>
-        <div>
+        <div class="content">
           <p>
             Outside of academics, I enjoy tutoring students in coding and math, exploring new AI tools, 
             hiking, and reading about space and astrophysics.
@@ -66,5 +66,38 @@
   <footer>
     <p>© 2025 Mi-Ru Youn</p>
   </footer>
+
+  <script>
+  document.querySelectorAll("details").forEach((detail) => {
+    const content = detail.querySelector(".content");
+
+    detail.addEventListener("toggle", function () {
+      if (this.open) {
+        // Accordion mode: close others
+        document.querySelectorAll("details").forEach((other) => {
+          if (other !== this) other.removeAttribute("open");
+        });
+
+        // Expanding
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.opacity = "1";
+        content.style.padding = "12px 16px";
+
+        // After transition, remove maxHeight so it adapts
+        setTimeout(() => {
+          if (this.open) content.style.maxHeight = "none";
+        }, 600);
+      } else {
+        // Collapsing
+        content.style.maxHeight = content.scrollHeight + "px"; // current height
+        content.offsetHeight; // force repaint
+        content.style.maxHeight = "0";
+        content.style.opacity = "0";
+        content.style.padding = "0 16px";
+      }
+    });
+  });
+  </script>
+
 </body>
 </html>
