@@ -136,8 +136,6 @@ footer {
 /* ------------------------
    About Page Dropdowns
 ------------------------- */
-/* Container styling */
-/* Dropdown box */
 details {
   margin: 16px 0;
   border: 1px solid #ddd;
@@ -152,23 +150,34 @@ summary {
   color: #1a0dab;
   cursor: pointer;
   user-select: none;
-  list-style: none; /* remove default arrow style if you want */
+  list-style: none; /* hides browser’s default arrow */
 }
 
-/* Answer content (everything after summary) */
-details > summary + * {
+/* Smooth drop animation */
+details .content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.4s ease, opacity 0.4s ease;
-  padding: 0 16px; /* side padding only when closed */
+  padding: 0 16px;
 }
 
-/* Smooth expand when open */
-details[open] > summary + * {
-  max-height: 500px; /* adjust if content is longer */
+details[open] .content {
+  max-height: 500px;
   opacity: 1;
   padding: 12px 16px;
+}
+
+/* Custom arrow indicator */
+summary::after {
+  content: "▶";               /* right-pointing arrow */
+  font-size: 0.9rem;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);   /* turns downward when open */
 }
 
 
