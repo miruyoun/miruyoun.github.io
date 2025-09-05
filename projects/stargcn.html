@@ -1,0 +1,58 @@
+<section id="dark-matter-gnn">
+  <h2>🌌 Reproducing GNN-based Inference of Dark Matter Density Profiles</h2>
+  <p><strong>Team:</strong> Hieu Nguyen, Yiren Wang, Mi-Ru Youn, Gukai Chen<br>
+     <strong>Date:</strong> May 2025<br>
+     <strong>Code:</strong> <a href="https://github.com/ryanice4hire/DS542-Final" target="_blank">GitHub Repository</a>
+  </p>
+
+  <h3>📖 Overview</h3>
+  <p>
+    We reproduced and analyzed the <strong>graph neural network (GNN)</strong> approach introduced by 
+    Nguyen et al. (2022) for inferring dark matter density profiles in dwarf galaxies. 
+    Using simulated stellar kinematics generated via <em>StarSampler</em>, we implemented both:
+  </p>
+  <ul>
+    <li>A <strong>scratch-built GNN</strong> (PyTorch)</li>
+    <li>A <strong>library-based GNN</strong> (PyTorch Geometric + normalizing flows)</li>
+  </ul>
+  <p>
+    Our aim was to validate the original results, quantify reproducibility, and assess sensitivity to hyperparameter choices.
+  </p>
+
+  <h3>🔬 Methodology</h3>
+  <ul>
+    <li><strong>Scratch GNN:</strong> Two GCNConv layers (64 hidden units) + pooling + linear head trained on 80k simulated galaxies.</li>
+    <li><strong>Normalizing Flow Inference:</strong> Graph embeddings (ChebConv) conditioned into a Masked Autoregressive Flow (MAF) for posterior sampling.</li>
+    <li><strong>Benchmarking:</strong> Implemented spherical Jeans equation solver to compare against classical methods.</li>
+    <li><strong>Datasets:</strong> 100k simulated dwarf galaxies with parameters sampled from generalized NFW (gNFW) profiles.</li>
+  </ul>
+
+  <h3>📊 Results</h3>
+  <ul>
+    <li>The <strong>scratch GNN</strong> reproduced Figure 1 of Nguyen et al., recovering parameters <em>r<sub>s</sub></em> and <em>ρ<sub>0</sub></em> with reduced accuracy on the exponent γ.</li>
+    <li>The <strong>GNN + flow</strong> pipeline achieved posterior recovery consistent with original contours, reducing parameter errors by <strong>~2x vs. Jeans analysis</strong>.</li>
+    <li>RMSE across 10,000 test galaxies:
+      <ul>
+        <li>γ: <strong>0.18</strong> vs. <strong>0.35</strong> (Jeans)</li>
+        <li>log r<sub>s</sub>: <strong>0.12</strong> vs. <strong>0.22</strong></li>
+        <li>log ρ<sub>0</sub>: <strong>0.15</strong> vs. <strong>0.28</strong></li>
+      </ul>
+    </li>
+    <li>Credible intervals showed well-calibrated uncertainty, especially around the stellar half-light radius.</li>
+  </ul>
+
+  <h3>📈 Visualizations</h3>
+  <ul>
+    <li>Recreation of parameter recovery plots (Figure 1)</li>
+    <li>Normalizing flow posterior distributions (Figure 2)</li>
+    <li>Jeans-model comparison (Figure 3)</li>
+    <li>Training vs. validation loss curves</li>
+  </ul>
+
+  <h3>✅ Key Takeaways</h3>
+  <ul>
+    <li>GNN-based inference provides <strong>more accurate and robust constraints</strong> on dark matter profiles than classical methods.</li>
+    <li>Implementation details (γ sensitivity) highlight reproducibility challenges.</li>
+    <li>Future work: extend to <strong>non-spherical systems</strong> and <strong>transfer learning across galaxy types</strong>.</li>
+  </ul>
+</section>
