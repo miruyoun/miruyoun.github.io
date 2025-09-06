@@ -6,7 +6,7 @@ Welcome to my portfolio! Here I showcase selected projects in machine learning, 
 ## 📂 Projects
 - [Relaxed QMIX for Multi-Agent Reinforcement Learning](relaxedqmix.md)
 - [Graph Neural Networks for Dark Matter Inference](darkmatter.md)
-- [Boston Bus Equity Analysis (GBH Collaboration)](bus-equity.md)
+- [Boston Bus Equity Analysis (GBH Collaboration)](mbta.md)
 
 ## 📫 Contact
 - [LinkedIn](https://linkedin.com/in/miruayoun)  
