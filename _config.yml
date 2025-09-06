@@ -1,0 +1,12 @@
+title: "Mi-Ru Youn"
+description: "Data Science Portfolio | Projects in fields of Machine Learning, Statistics, and Data Analysis"
+theme: jekyll-theme-minimal
+
+# OR, better (remote_theme version):
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Optional (customize further)
+show_downloads: false
+google_analytics: # add your GA ID if you want tracking
