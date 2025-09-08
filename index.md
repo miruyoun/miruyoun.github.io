@@ -8,20 +8,23 @@
     <img src="assets/profile.png" alt="Portrait of Mi-Ru Youn" width="200" style="border-radius:50%;">
   </div>
 
-  <!-- Right column: content -->
+  <!-- Right column: intro text -->
   <div style="flex: 3;">
-
-  Welcome to my portfolio! Here I showcase selected projects in fields of machine learning, statistics, and data analysis.  
-
-  ## 📂 Projects
-  - [Relaxed QMIX for Multi-Agent Reinforcement Learning](relaxedqmix.md)
-  - [Boston Bus Equity Analysis (GBH and BU Spark! Collaboration)](mbta.md)
-  - [BMW Price Analysis](bmw.md)
-  - [Graph Neural Networks for Dark Matter Inference](darkmatter.md)
-
-  ## 📫 Contact
-  - [LinkedIn](https://linkedin.com/in/miruayoun)  
-  - [GitHub](https://github.com/miruyoun)  
-
+    <p>
+      Welcome to my portfolio! Here I showcase selected projects in fields of machine learning,
+      statistics, and data analysis.
+    </p>
   </div>
 </div>
+
+---
+
+## 📂 Projects
+- [Relaxed QMIX for Multi-Agent Reinforcement Learning](relaxedqmix.md)
+- [Boston Bus Equity Analysis (GBH and BU Spark! Collaboration)](mbta.md)
+- [BMW Price Analysis](bmw.md)
+- [Graph Neural Networks for Dark Matter Inference](darkmatter.md)
+
+## 📫 Contact
+- [LinkedIn](https://linkedin.com/in/miruayoun)  
+- [GitHub](https://github.com/miruyoun)  
