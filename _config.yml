@@ -1,12 +1,17 @@
-title: "My Top Projects"
-description: "Data Science Portfolio | Projects in fields of Machine Learning, Statistics, and Data Analysis"
+title: "Mi-Ru Youn" # your name (or website title) here
+logo: "/assets/profile.png" # your profile picture (square image in assets folder)
+description: > # your text below (remove <br> if you don’t need line breaks)
+  <br>
+  Data Science Master's Student at Boston University.  
+  Experienced in **machine learning, statistical modeling, and data analysis**.  
+  <br><br>
+  Interested in building **AI-driven solutions** for research and industry.  
+  <br><br>
+  <a href="https://linkedin.com/in/miruayoun">View my LinkedIn Profile</a> | 
+  <a href="https://github.com/miruyoun">GitHub</a>
+
 theme: jekyll-theme-minimal
-
-# OR, better (remote_theme version):
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-  - jekyll-remote-theme
-
-# Optional (customize further)
-show_downloads: false
 google_analytics: # add your GA ID if you want tracking
+
+colors:
+  crimson: '#900C3F'
