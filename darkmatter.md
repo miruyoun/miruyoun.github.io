@@ -45,15 +45,15 @@ Demonstrated that GNNs + flows outperform traditional Jeans modeling in accuracy
 ---
 
 ## 🔗 Links
-- 💻 [GitHub Repository](https://github.com/ryanice4hire/DS542-Final)  
-- 📄 [Read Full Paper (PDF)](assets/DarkMatterGCN_Paper.pdf)  
+- 💻 [GitHub Repository](https://github.com/miruyoun/DS542_GCN_Model)  
+- 📄 [Read Full Paper (PDF)](assets/star/DarkMatterGCN_Paper.pdf)  
 
 ---
 
 ## 🖼️ Figures
-![Figure 1 – Parameter Recovery](assets/figure1.png)  
-![Figure 2 – Posterior Inference](assets/figure2.png)  
-![Figure 3 – Jeans Analysis](assets/figure3.png)  
-![Training vs Validation Loss](assets/loss_curve.png)  
-
+![Figure 1 – Parameter Recovery](assets/star/figure1.png)  
+![Figure 2 – Posterior Inference](assets/star/figure2.png)  
+![Figure 3 – Jeans Analysis](assets/star/figure3.png)  
+![Training vs Validation Loss](assets/star/loss_curve.png)  
+![Training vs Validation Loss](assets/star/regression_plot.png)
 ---

@@ -1,17 +1,25 @@
-title: "Mi-Ru Youn" # your name (or website title) here
-logo: "/assets/profile.png" # your profile picture (square image in assets folder)
-description: > # your text below (remove <br> if you don’t need line breaks)
-  <br>
+title: "Mi-Ru Youn"
+logo: "/assets/profile.png" # square image
+description: >
   Data Science Master's Student at Boston University.  
-  Experienced in **machine learning, statistical modeling, and data analysis**.  
-  <br><br>
+  Experienced in **machine learning, reinforcement learning, and data analysis**.  
   Interested in building **AI-driven solutions** for research and industry.  
-  <br><br>
-  <a href="https://linkedin.com/in/miruayoun">View my LinkedIn Profile</a> | 
-  <a href="https://github.com/miruyoun">GitHub</a>
+
+  <a href="https://linkedin.com/in/miruayoun">LinkedIn</a> | 
+  <a href="https://github.com/miruyoun">GitHub</a> | 
+  <a href="/assets/Miru_Youn_Resume.pdf">Resume (PDF)</a>  
+
+  ---
+  ### ⚡ Skills  
+  **Languages:** Python, R, SQL, Java, JavaScript, HTML/CSS  
+  **Machine Learning & AI:** ML, Deep Learning, Reinforcement Learning, Predictive Analytics  
+  **Frameworks:** Scikit-Learn, PyTorch, TensorFlow/Keras, PyTorch Geometric  
+  **Data Tools:** Pandas, NumPy, Spark, Hadoop, MongoDB  
+  **Visualization:** Matplotlib, Seaborn, Tableau, Power BI  
+  **Platforms:** Git, Jupyter, AWS, Azure, Linux
 
 theme: jekyll-theme-minimal
-google_analytics: # add your GA ID if you want tracking
+google_analytics: UA-000000-0 # your Google Analytics tracking ID here
 
 colors:
   crimson: '#900C3F'
