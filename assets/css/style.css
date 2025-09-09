@@ -1,0 +1,9 @@
+/* Hide the theme footer */
+footer {
+  display: none !important;
+}
+
+/* Optional: better spacing in sidebar */
+.sidebar p, .sidebar li {
+  line-height: 1.5em;
+}
