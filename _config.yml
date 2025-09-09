@@ -23,5 +23,3 @@ google_analytics: UA-000000-0
 
 colors:
   crimson: '#900C3F'
-
-# Removed github_username to avoid extra link
