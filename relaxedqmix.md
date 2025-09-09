@@ -35,19 +35,20 @@ Key hyperparameters:
 - **Training Performance**  
   Relaxed QMIX achieved faster convergence than baseline QMIX on maps like *8m* and *2s3z*.  
 
-  ![Training Curve](assets/pymarl/relaxedqmix/training_curve.png)  
+  ![Training Curve](assets/pymarl/relaxedwr.png)  
 
 - **Map Performance Comparison**  
   Relaxed QMIX significantly outperformed QMIX in heterogeneous settings like *MMM2*.  
 
-  ![Win Rate Comparison](assets/pymarl/relaxedqmix/winrate.png)  
+  ![Win Rate Comparison](assets/pymarl/qmixwr.png)  
+
 ---
 
 ## 🎥 Video Demonstrations  
 
 Here are two highlights showcasing the Relaxed QMIX vs QMIX training runs on StarCraft II:  
 
-### Training Run Example  
+### QMIX 
 <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/_o91TFaJ-rg" 
         title="QMIX Training Run" 
@@ -56,7 +57,7 @@ Here are two highlights showcasing the Relaxed QMIX vs QMIX training runs on Sta
         allowfullscreen>
 </iframe>  
 
-### Episode Highlight  
+### Relaxed QMIX  
 <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/To9-4rwUBhw" 
         title="Relaxed QMIX Episode Highlight" 
@@ -65,6 +66,7 @@ Here are two highlights showcasing the Relaxed QMIX vs QMIX training runs on Sta
         allowfullscreen>
 </iframe>  
 
+---
 
 ## 🌟 Impact
 RelaxedQMIX demonstrates that **small architectural changes can significantly improve cooperative MARL performance**, especially in heterogeneous environments.
