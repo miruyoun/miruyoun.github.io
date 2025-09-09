@@ -16,7 +16,7 @@ description: >
   <b>Frameworks:</b> Scikit-Learn, PyTorch, TensorFlow/Keras, PyTorch Geometric<br>
   <b>Data Tools:</b> Pandas, NumPy, Spark, Hadoop, MongoDB<br>
   <b>Visualization:</b> Matplotlib, Seaborn, Tableau, Power BI<br>
-  <b>Platforms:</b> Git, Jupyter, AWS, Azure, Linux
+  <b>Platforms:</b><br> Git, Jupyter, AWS, Azure, Linux
 
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0
