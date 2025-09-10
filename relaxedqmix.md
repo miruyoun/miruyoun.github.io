@@ -1,4 +1,4 @@
-# 🌌 Relaxed QMIX: Enhanced Multi-Agent Reinforcement Learning
+# Relaxed QMIX: Enhanced Multi-Agent Reinforcement Learning
 
 ## The Challenge
 Standard QMIX algorithms force strict monotonicity constraints, preventing AI agents from learning complex cooperative strategies like tactical retreats in StarCraft II battles. This limitation severely impacts performance in heterogeneous team compositions.
@@ -8,7 +8,8 @@ Standard QMIX algorithms force strict monotonicity constraints, preventing AI ag
 ## My Solution
 I designed and implemented **Relaxed QMIX**, extending the original algorithm with a correction network and regularization system. This allows agents to learn flexible coordination strategies while maintaining training stability.
 
-**Key Innovation:** Added an ε-parameter to balance strict coordination rules with strategic flexibility, enabling richer team behaviors.
+**Key Innovation:** added an ε-parameter to balance strict coordination rules with flexibility.
+
 ---
 
 ## Results That Matter
