@@ -22,20 +22,20 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 ![Training Curve](assets/pymarl/relaxedwr.png)
 ![Win Rate Comparison](assets/pymarl/qmixwr.png)
 
----
-
-## Technical Implementation
-- **Framework:** PyMARL, PyTorch
-- **Infrastructure:** SLURM cluster management, NVIDIA V100 GPUs
-- **Scale:** Thousands of simulated battles across multiple StarCraft II scenarios
-
----
+--- 
 
 ### See It in Action
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_o91TFaJ-rg" title="QMIX Training Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/To9-4rwUBhw" title="Relaxed QMIX Episode Highlight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+## Technical Implementation
+- **Framework:** PyMARL, PyTorch
+- **Infrastructure:** SLURM cluster management, NVIDIA V100 GPUs
+- **Scale:** Thousands of simulated battles across multiple StarCraft II scenarios
 
 ---
 
