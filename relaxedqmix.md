@@ -17,7 +17,7 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 - Faster convergence on standard benchmarks while matching baseline performance
 - Trained across 2M+ training timesteps on enterprise-grade GPU clusters
 
-* A timestep is one agent-environment interaction cycle: agents observe, act, and receive feedback. This represents thousands of complete StarCraft II battles.
+*A timestep is one agent-environment interaction cycle: agents observe, act, and receive feedback. This represents thousands of complete StarCraft II battles.
 
 ![Training Curve](assets/pymarl/relaxedwr.png)
 ![Win Rate Comparison](assets/pymarl/qmixwr.png)
