@@ -30,6 +30,8 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_o91TFaJ-rg" title="QMIX Training Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br><br>
+
 **RelaxedQMIX Training Run**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/To9-4rwUBhw" title="Relaxed QMIX Episode Highlight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
