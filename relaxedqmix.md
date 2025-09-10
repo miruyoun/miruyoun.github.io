@@ -23,7 +23,7 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 
 --- 
 
-### See It in Action
+## See It in Action
 
 **QMIX Training Run**
 
