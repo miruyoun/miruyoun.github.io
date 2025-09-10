@@ -8,16 +8,15 @@ Standard QMIX algorithms force strict monotonicity constraints, preventing AI ag
 ## My Solution
 I designed and implemented **Relaxed QMIX**, extending the original algorithm with a correction network and regularization system. This allows agents to learn flexible coordination strategies while maintaining training stability.
 
----
-
 **Key Innovation:** Added an ε-parameter to balance strict coordination rules with strategic flexibility, enabling richer team behaviors.
+---
 
 ## Results That Matter
 - **7x performance improvement** on complex maps (70% vs 10% win rate)
 - Faster convergence on standard benchmarks while matching baseline performance
 - Trained across 2M+ training timesteps on enterprise-grade GPU clusters
 
-*A timestep is one agent-environment interaction cycle: agents observe, act, and receive feedback. This represents thousands of complete StarCraft II battles.
+*A timestep is one agent-environment interaction cycle: agents observe, act, and receive feedback.
 
 ![Training Curve](assets/pymarl/relaxedwr.png)
 ![Win Rate Comparison](assets/pymarl/qmixwr.png)
@@ -26,7 +25,11 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 
 ### See It in Action
 
+**QMIX Training Run**
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_o91TFaJ-rg" title="QMIX Training Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**RelaxedQMIX Training Run**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/To9-4rwUBhw" title="Relaxed QMIX Episode Highlight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
