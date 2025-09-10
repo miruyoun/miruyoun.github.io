@@ -8,7 +8,10 @@ Standard QMIX algorithms force strict monotonicity constraints, preventing AI ag
 ## My Solution
 I designed and implemented **Relaxed QMIX**, extending the original algorithm with a correction network and regularization system. This allows agents to learn flexible coordination strategies while maintaining training stability.
 
-**Key Innovation:** added an ε-parameter to balance strict coordination rules with flexibility.
+**Key Innovations:**  
+- Introduced an **ε-parameter** to relax QMIX’s strict monotonicity constraint.
+- Designed a **correction network with double state re-injection**, allowing the model to capture complex interactions between agents and global state.  
+- Added **L2 regularization** during training to stabilize learning and prevent overfitting.  
 
 ---
 
