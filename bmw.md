@@ -1,13 +1,13 @@
-# 🚗 BMW Price Prediction: Advanced Statistical Modeling
+# BMW Price Prediction: Advanced Statistical Modeling
 
 ## The Challenge
 B2B auction platforms needed accurate pricing models for used BMW vehicles to optimize bidding strategies. With 4,843 BMW cars sold in 2018, the challenge was identifying which vehicle features, mileage patterns, and market timing factors most significantly impact auction prices.
 
-## My Contribution & Approach
+## Our Solution
 
 **Strategy:** Built and compared multiple regression approaches, ultimately developing a Ridge regression model with square-root price transformation for optimal performance.
 
-**Key Technical Innovation:** Applied regularization techniques with cross-validated λ tuning to prevent overfitting while retaining all predictive features.
+**Key Technical Innovation:** Leveraged Ridge regression with optimized regularization (λ) to reduce overfitting, boosting predictive accuracy from 63% to 74% while maintaining actionable feature insights.
 
 ## Results That Matter
 - **74% prediction accuracy** (R² = 0.74) vs 63% baseline multiple regression
