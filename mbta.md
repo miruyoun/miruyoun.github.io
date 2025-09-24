@@ -57,6 +57,6 @@ Revealed how delays and ridership changes disproportionately impact Boston’s E
 ---
 
 ## 🔗 Links
-- 📄 [Read Full Report (PDF)](assets/mbta/GBH_Paper.pdf)  
+- 📕 [Read Full Report (PDF)](assets/mbta/GBH_Paper.pdf)  
 
 ---
