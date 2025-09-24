@@ -31,13 +31,13 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 
 **QMIX Training Run**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=kZImGVXS_YA&feature=youtu.be" title="QMIX Training Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/kZImGVXS_YA" title="QMIX Training Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br><br>
 
 **RelaxedQMIX Training Run**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=BXhIihipSZs&feature=youtu.be" title="Relaxed QMIX Episode Highlight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/BXhIihipSZs" title="Relaxed QMIX Episode Highlight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
 
 ---
