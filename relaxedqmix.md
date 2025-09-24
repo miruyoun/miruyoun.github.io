@@ -37,7 +37,7 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 
 **RelaxedQMIX Training Run**
 
-<iframe width="560" height="315" src="https://www.youtube/embed/BXhIihipSZs" title="Relaxed QMIX Episode Highlight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BXhIihipSZs" title="Relaxed QMIX Episode Highlight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
 
 ---
