@@ -45,8 +45,8 @@ Demonstrated that GNNs + flows outperform traditional Jeans modeling in accuracy
 ---
 
 ## Links
-- [GitHub Repository](https://github.com/miruyoun/DS542_GCN_Model)  
-- [Read Full Paper (PDF)](assets/star/DarkMatterGCN_Paper.pdf)  
+- **[GitHub Repository](https://github.com/miruyoun/DS542_GCN_Model){:target="_blank"}**    
+- **[Read Full Paper (PDF)](assets/star/DarkMatterGCN_Paper.pdf){:target="_blank"}**    
 
 ---
 

@@ -59,5 +59,5 @@ This accuracy improvement enables dealers to:
 
 ## 📄 Full Report  
 For full methodology, diagnostics, and additional plots:  
-[GitHub Repository](https://github.com/miruyoun/BMW_Price_Analysis)  
-[Read Full Report (PDF)](assets/bmw/Final_Report_C2G3.pdf)  
+- **[GitHub Repository](https://github.com/miruyoun/BMW_Price_Analysis){:target="_blank"}**    
+- **[Read Full Report (PDF)](assets/bmw/Final_Report_C2G3.pdf){:target="_blank"}**    
