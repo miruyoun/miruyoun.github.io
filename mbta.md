@@ -57,6 +57,6 @@ Revealed how delays and ridership changes disproportionately impact Boston’s E
 ---
 
 ## Links
-- [GitHub Repository](https://github.com/BU-Spark/ds-wgbh-bus-equity)  
-- [Read Full Report (PDF)](assets/mbta/GBH_Paper.pdf)  
+- [GitHub Repository](https://github.com/BU-Spark/ds-wgbh-bus-equity){:target="_blank" rel="noopener noreferrer"}  
+- [Read Full Report (PDF)](assets/mbta/GBH_Paper.pdf){:target="_blank" rel="noopener noreferrer"}  
 ---
