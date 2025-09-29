@@ -1,4 +1,4 @@
-# 🚗 BMW Price Prediction: Advanced Statistical Modeling
+# BMW Price Prediction: Advanced Statistical Modeling
 
 ## The Challenge
 B2B auction platforms needed accurate pricing models for used BMW vehicles to optimize bidding strategies. With 4,843 BMW cars sold in 2018, the challenge was identifying which vehicle features, mileage patterns, and market timing factors most significantly impact auction prices.
@@ -59,5 +59,5 @@ This accuracy improvement enables dealers to:
 
 ## 📄 Full Report  
 For full methodology, diagnostics, and additional plots:  
-💻 [GitHub Repository](https://github.com/miruyoun/BMW_Price_Analysis)  
-📕 [Read Full Report (PDF)](assets/bmw/Final_Report_C2G3.pdf)  
+[GitHub Repository](https://github.com/miruyoun/BMW_Price_Analysis)  
+[Read Full Report (PDF)](assets/bmw/Final_Report_C2G3.pdf)  

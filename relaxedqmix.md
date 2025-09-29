@@ -52,9 +52,9 @@ I designed and implemented **Relaxed QMIX**, extending the original algorithm wi
 ## 📄 Full Report  
 
 For full methodology, complete diagnostics, and additional plots:  
-💻 [GitHub Repository](https://github.com/miruyoun/PyMARL_RL_Project)  
-📕 [Read Full Report (PDF)](assets/pymarl/RelaxedQMIX_Paper.pdf)  
-🎥 [Full YouTube Playlist](https://www.youtube.com/playlist?list=PLfNwQXb-4EYiBC-Hm0P8xQDTPxbTGFpBp)
+[GitHub Repository](https://github.com/miruyoun/PyMARL_RL_Project)  
+[Read Full Report (PDF)](assets/pymarl/RelaxedQMIX_Paper.pdf)  
+[Full YouTube Playlist](https://www.youtube.com/playlist?list=PLfNwQXb-4EYiBC-Hm0P8xQDTPxbTGFpBp)
 
 ---
 

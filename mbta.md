@@ -9,12 +9,12 @@ A data-driven analysis of **MBTA bus ridership, delays, and equity impacts** acr
 
 ---
 
-## 🚀 Highlights
+## Highlights
 - Compared ridership trends pre- vs post-COVID.  
 - Analyzed travel times, delays, and reliability across key routes.  
 - Assessed service disparities for **Environmental Justice communities**.  
 
-> ### ℹ️ What Are Environmental Justice (EJ) Neighborhoods?  
+> ### What Are Environmental Justice (EJ) Neighborhoods?  
 > In Massachusetts, **Environmental Justice (EJ) neighborhoods** are census block groups where residents are more likely to face disproportionate burdens from environmental or infrastructure decisions.  
 >  
 > A neighborhood is officially designated as EJ if it meets **one or more** of these criteria:  
@@ -26,7 +26,7 @@ A data-driven analysis of **MBTA bus ridership, delays, and equity impacts** acr
 ---
 
 
-## 📊 Key Results
+## Key Results
 - **Ridership Trends**  
   Sharp drop in 2020 during COVID, recovery surpassing pre-pandemic levels by 2023.  
 
@@ -51,12 +51,12 @@ A data-driven analysis of **MBTA bus ridership, delays, and equity impacts** acr
 
 ---
 
-## 🌟 Impact
+## Impact
 Revealed how delays and ridership changes disproportionately impact Boston’s Environmental Justice neighborhoods, informing more equitable transit planning.
 
 ---
 
-## 🔗 Links
-- 📕 [Read Full Report (PDF)](assets/mbta/GBH_Paper.pdf)  
-
+## Links
+- [GitHub Repository](https://github.com/BU-Spark/ds-wgbh-bus-equity)  
+- [Read Full Report (PDF)](assets/mbta/GBH_Paper.pdf)  
 ---

@@ -9,7 +9,7 @@ This project reproduces Nguyen et al.’s **graph neural network (GNN)** pipelin
 
 ---
 
-## 🚀 Highlights
+## Highlights
 - Built two pipelines:
   - **Scratch GCN** → two-layer GCNConv + global pooling.  
   - **PyTorch Geometric GNN + Normalizing Flow** → ChebConv backbone + MAF flow.  
@@ -18,7 +18,7 @@ This project reproduces Nguyen et al.’s **graph neural network (GNN)** pipelin
 
 ---
 
-## 📊 Key Results
+## Key Results
 - **Figure 1:** Parameter recovery with scratch GCN — strong fits for ρ₀ and rₛ, weaker for γ.  
 - **Figure 2:** Posterior inference via normalizing flows — credible bands captured cored vs cuspy halos.  
 - **Figure 3:** Jeans analysis comparison — GNN reduced RMSE errors by ~2× vs classical baseline.  
@@ -29,7 +29,7 @@ This project reproduces Nguyen et al.’s **graph neural network (GNN)** pipelin
 
 ---
 
-## 📂 Dataset
+## Dataset
 - Generated with **StarSampler**.  
 - Priors:  
   - log₁₀ ρ₀ ∼ U(5, 8)  
@@ -39,18 +39,18 @@ This project reproduces Nguyen et al.’s **graph neural network (GNN)** pipelin
 
 ---
 
-## 🌟 Impact
+## Impact
 Demonstrated that GNNs + flows outperform traditional Jeans modeling in accuracy and uncertainty calibration, highlighting the promise of ML in astrophysics.
 
 ---
 
-## 🔗 Links
-- 💻 [GitHub Repository](https://github.com/miruyoun/DS542_GCN_Model)  
-- 📄 [Read Full Paper (PDF)](assets/star/DarkMatterGCN_Paper.pdf)  
+## Links
+- [GitHub Repository](https://github.com/miruyoun/DS542_GCN_Model)  
+- [Read Full Paper (PDF)](assets/star/DarkMatterGCN_Paper.pdf)  
 
 ---
 
-## 🖼️ Figures
+## Figures
 ![Figure 1 – Parameter Recovery](assets/star/figure1.png)  
 ![Figure 2 – Posterior Inference](assets/star/figure2.png)  
 ![Figure 3 – Jeans Analysis](assets/star/figure3.png)  
