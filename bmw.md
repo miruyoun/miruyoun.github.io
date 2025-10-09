@@ -8,8 +8,7 @@ B2B auction platforms needed accurate pricing models for used BMW vehicles to op
 ## Exploratory Data Analysis
 Before modeling, I explored the dataset to understand price behavior and variable importance.
 
-- **Price distribution** was right-skewed with extreme outliers, motivating a √price transformation.  
-- **Mileage** showed a strong negative correlation with price, confirming it as a key predictor.  
+- **Price distribution** was right-skewed with extreme outliers, motivating a √price transformation.
 - **Fuel type** was heavily imbalanced (90% diesel), which limited its predictive power.  
 
 ![Discrete Distribution](assets/bmw/variable.png)  
