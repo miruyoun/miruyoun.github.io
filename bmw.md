@@ -12,9 +12,8 @@ Before modeling, I explored the dataset to understand price behavior and variabl
 - **Mileage** showed a strong negative correlation with price, confirming it as a key predictor.  
 - **Fuel type** was heavily imbalanced (90% diesel), which limited its predictive power.  
 
-![Price Distribution](assets/bmw/price_boxplot.png)  
-![Mileage vs Price Scatter](assets/bmw/mileage_scatter.png)  
-![Fuel Type Distribution](assets/bmw/fuel_barplot.png)  
+![Discrete Distribution](assets/bmw/variable.png)  
+![Categorical Distribution](assets/bmw/more_variable.png)  
 
 ---
 
@@ -23,7 +22,7 @@ Before modeling, I explored the dataset to understand price behavior and variabl
 
 **Key Technical Innovation:** Leveraged Ridge regression with optimized regularization (λ) to reduce overfitting, boosting predictive accuracy from 63% to 74% while maintaining actionable feature insights.
 
-![Ridge Cross-Validation Curve](assets/bmw/ridge_cv.png)
+![Ridge Cross-Validation Curve](assets/bmw/ridge.png)
 
 ---
 
