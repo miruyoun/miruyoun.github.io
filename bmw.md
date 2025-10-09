@@ -16,7 +16,7 @@ Before modeling, I explored the dataset to understand price behavior and variabl
 
 ---
 
-## Our Solution
+## My Solution
 **Strategy:** Built and compared multiple regression approaches, ultimately developing a Ridge regression model with a square-root price transformation for optimal performance. Predictions were squared back to price before evaluation to ensure accuracy metrics reflected actual auction values.
 
 **Key Technical Innovation:** Leveraged Ridge regression with optimized regularization (λ) to reduce overfitting, boosting predictive accuracy from 63% to 74% while maintaining actionable feature insights.
